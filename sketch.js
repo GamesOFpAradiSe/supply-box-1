@@ -31,7 +31,7 @@ function setup() {
 	engine = Engine.create();
 	world = engine.world;
 
-	packageBody = Bodies.circle(width/2 , 200 , 5 , {restitution:0, isStatic:true});
+	packageBody = Bodies.circle(width/2 , 200 , 5 , { isStatic:true});
 	World.add(world, packageBody);
 	
 
@@ -42,7 +42,7 @@ function setup() {
 
 	Engine.run(engine);
   
-console.log(packageSprite)
+console.log(packageBody)
 
 }
 
